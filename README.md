@@ -25,9 +25,12 @@ you can use nodemon for api to reflect changes automatically.
 
 > **NOTE**: If you get CORS error while connecting to api then run below command
 ```bash
-1. npm install --save cors
-2. add below to api app.js
+npm install --save cors
+```
+After running above command make following change to the api code
+```javascript
+1. Add below to api app.js
     var cors = require('cors');
-3. add below to tell express to use cors
+2. Add below to tell express to use cors
     app.use(cors());
 ```
